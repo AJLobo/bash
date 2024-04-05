@@ -1,7 +1,7 @@
-alias gcc32='i686-w64-mingw32-gcc'
-alias g++32='i686-w64-mingw32-g++'
-alias gcc='x86_64-w64-mingw32-gcc'
-alias g++='x86_64-w64-mingw32-g++ -static'
+#alias gcc32='i686-w64-mingw32-gcc'
+#alias g++32='i686-w64-mingw32-g++'
+#alias gcc='x86_64-w64-mingw32-gcc'
+#alias g++='x86_64-w64-mingw32-g++ -static'
 
 alias pizza='ssh adrian@129.24.245.6'
 alias hopper='ssh ajabeyta@hopper.alliance.unm.edu'
@@ -13,4 +13,9 @@ unrarall () {
   do unrar x "$f";
   done
 
+}
+
+mkcd ()
+{
+  mkdir -p -- "$1" && cd -P -- "$1"
 }
